@@ -1,0 +1,71 @@
+/* Header*/
+@import './variables';
+
+
+header{
+    a {
+        cursor: pointer;
+        color: #0400ff !important;
+        &:hover {
+            color: #ff008c !important;
+        }
+    }
+}
+
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Span */
+
+  button ,.btn-btn-primary{
+    background-color: transparent;
+  }
+
+  span{
+    cursor: pointer;
+  }
+
+  .modal-header, .modal-title{
+    color: #333333;
+    align-self: center;
+  }
+  p{
+    color: #000000;
+  }
+
+  .modal-header {
+    padding: 0.5rem 2rem;
+  
+}
+
+  /* jumbotron */
+
+  .jumbotron {
+    padding: 0rem 0.5rem;
+}
+

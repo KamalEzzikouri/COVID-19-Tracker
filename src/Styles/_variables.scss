@@ -1,0 +1,9 @@
+$maincolor: #1f252e;
+$secondary-color: #ff6b81;
+
+@mixin background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

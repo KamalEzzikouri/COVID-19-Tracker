@@ -1,0 +1,100 @@
+
+
+/************************
+    13. Footer
+************************/
+footer {
+    position: relative;
+    padding: 60px 0;
+    margin: 50px -35px 0 0;
+    color: #adb5bd;
+  }
+  
+  #style-switcher {
+    background: none repeat scroll 0 0 #ffffff;
+    -webkit-box-shadow: 0 0 3px rgba(50, 54, 59, 0.2);
+            box-shadow: 0 0 3px rgba(50, 54, 59, 0.2);
+    left: -90px;
+    position: fixed;
+    top: 17%;
+    width: 90px;
+    z-index: 9999;
+    padding: 10px 5px;
+  }
+  
+  #style-switcher .title {
+    font-size: 16px;
+  }
+  
+  #style-switcher .bottom {
+    background: none repeat scroll 0 0 #ffffff;
+  }
+  
+  #style-switcher .bottom a.settings {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 41px;
+    position: absolute;
+    right: -41px;
+    top: 0px;
+    width: 40px;
+    padding: 3px;
+    border-radius: 0 30px 30px 0;
+  }
+  
+  #style-switcher .bottom a.settings i {
+    margin-left: 4px;
+  }
+  
+  #style-switcher ul.pattern {
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0px;
+  }
+  
+  #style-switcher ul.pattern li.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 0;
+  }
+  
+  #style-switcher ul.pattern li a {
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 3px;
+  }
+  
+  #style-switcher ul.pattern .default {
+    background-color: #f7ac44;
+  }
+  
+  #style-switcher ul.pattern .blue {
+    background-color: #6563ff;
+  }
+  
+  #style-switcher ul.pattern .purple {
+    background-color: #7952B3;
+  }
+  
+  #style-switcher ul.pattern .green {
+    background-color: #52cc99;
+  }
+  
+  #style-switcher ul.pattern .red {
+    background-color: #f86446;
+  }
+  
+  #style-switcher ul.pattern .cyan {
+    background-color: #66ccff;
+  }
+  
+  @media only screen and (max-width: 425px) {
+    #style-switcher {
+      display: none;
+    }
+  }
+  a.text-reset.kamalezzikouri{
+    color: rgb(255, 0, 0);
+  }

@@ -1,17 +1,52 @@
-@import './App';
+@import './_global';
+@import './Covid-19';
+@import './errors';
+@import './Cards';
+@import './Countries';
+@import './Header';
+@import './Chart';
+@import './Footer';
 
+
+
+
+/************************
+    1. Variables
+************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/************************
+    2. General
+************************/
 
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden !important;
+  font-size: 15px;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
 }
+
+::-moz-selection {
+  background: #3e4349;
+  color: #ffffff;
+}
+
+::selection {
+  background: #3e4349;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  line-height: 1.6;
+}
+
