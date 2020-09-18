@@ -1,13 +1,38 @@
-import React, {Component} from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
 
 
 import { E404, Covid19} from '../Component';
 
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 
-class PublicRoutes extends Component {
-    render(){
+
+const PublicRoutes = () => {
+
+    
+
+    // <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    ReactGA.initialize('UA-176766366-1');
+    const history = createBrowserHistory()
+    history.listen(location => {
+        ReactGA.set({ page: location.pathname });
+        ReactGA.pageview(location.pathname);
+    });
+
+       ReactGA.event({
+        category: 'Users',
+        action: 'Kamal Ezzikouri, Welcome to my Portfolio Website'
+        });
+
+    useEffect(() => {
+         ReactGA.pageview(window.location.pathname + window.location.search)
+     }, [history])
+
+
         return(
+        <Router history={history}>
             <Switch>
 
                 <Route 
@@ -31,8 +56,9 @@ class PublicRoutes extends Component {
 
 
             </Switch>
-        )
-    }
+        </Router>
+        );
+    
 }
 
 
