@@ -14,7 +14,7 @@ const PublicRoutes = () => {
 
     // <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    ReactGA.initialize('UA-176766366-1');
+    ReactGA.initialize('UA-176766366-2');
     const history = createBrowserHistory()
     history.listen(location => {
         ReactGA.set({ page: location.pathname });
