@@ -18,36 +18,46 @@ const ChartForm = ({ data, country }) =>{
         FetchData();
     }, []);
 
-    const LineChar = (
-        DailyData.length
-        ? (
-            <Line
-            data ={{
-                labels: DailyData.map (({ Date}) => Date),
-                datasets: [{
-                    data: DailyData.map (({ Confirmed }) => Confirmed),
-                    label: 'Infected',
-                    borderColor:'#3333ff', 
-                    fill: true,
-                }, 
-                // {
-                //     data: DailyData.map (({ Recovered }) => Recovered),
-                //     label: 'Recovered',
-                //     borderColor:'#3333bb', 
-                //     backgroundColor:'rgba(0, 255, 0, 0.5)',
-                //     fill: true,
-                // },
+    // const LineChar = (
+    //     DailyData.length
+    //     ? (
+    //         <Line
+    //         data ={{
+    //             labels: DailyData.map (({ Date}) => Date),
+    //             datasets: [{
+    //                 data: DailyData.map (({ Confirmed }) => Confirmed),
+    //                 label: 'Infected',
+    //                 borderColor:'#3333ff', 
+    //                 fill: true,
+    //             }, 
+    //             // {
+    //             //     data: DailyData.map (({ Recovered }) => Recovered),
+    //             //     label: 'Recovered',
+    //             //     borderColor:'#3333bb', 
+    //             //     backgroundColor:'rgba(0, 255, 0, 0.5)',
+    //             //     fill: true,
+    //             // },
             
-                {
-                    data: DailyData.map (({ Deaths }) => Deaths),
-                    label: 'Deaths',
-                    borderColor:'red', 
-                    backgroundColor:'rgba(255, 0, 0, 0.5)',
-                    fill: true,
-                }],
-            }}
-        />
-        ): null 
+    //             {
+    //                 data: DailyData.map (({ Deaths }) => Deaths),
+    //                 label: 'Deaths',
+    //                 borderColor:'red', 
+    //                 backgroundColor:'rgba(255, 0, 0, 0.5)',
+    //                 fill: true,
+    //             }],
+    //         }}
+    //     />
+    //     ): null 
+    // );
+
+    const LineChar =(
+        <div>
+            There is a problem with the Line Chart, the fetching DailyData have API problem, as soon as the API back to normal i will 
+            fix it again. sorry for this.
+            <h5>
+                you can choose a country to see the Bar chart, is working fine.
+            </h5>
+        </div>
     );
 
     const BarChart = (
@@ -78,6 +88,7 @@ const ChartForm = ({ data, country }) =>{
     return(
         <div className="container">
             {country ? BarChart : LineChar}
+            {/* {country ? BarChart : LineChar} */}
         </div>
     )
 
